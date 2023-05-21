@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "118424567447",
+    "firebase_url": "https://bitirme-projesi-c24db-default-rtdb.firebaseio.com",
+    "project_id": "bitirme-projesi-c24db",
+    "storage_bucket": "bitirme-projesi-c24db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118424567447:android:9a8930cd1ea376ffa633d2",
+        "android_client_info": {
+          "package_name": "com.my.diyetisyen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118424567447-lgfm1vev1q4umivg3q8tl3a2ec0o49c9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4tBt8v_2j0pDZg0h6LbLCW20ZZVMU7RU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118424567447-lgfm1vev1q4umivg3q8tl3a2ec0o49c9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

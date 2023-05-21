@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/lato"
+                android:text="Besin ve Kalori Değeri Ekle"
+                android:textColor="@color/m_primary"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/m_border" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="64dp"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center"
+                    android:text="Besinlerin kalori değerleri, diyet programları açısından çok önemlidir. Üyenizin programına uyabilmesi, alternatif besinler tüketebilmesi için kalori değerlerini incelemesi ve dikkat ederek beslenmesi diyet açısından hayatidir. Burada besin adı ve ortalama kalori miktarını girebilirsiniz"
+                    android:textColor="@color/m_secondary"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="Besin Adı :"
+                        android:textColor="@color/m_primary"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/etBesinAdi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/rounded_bg_1"
+                        android:fontFamily="@font/lato"
+                        android:gravity="start"
+                        android:hint="Örn: Patlıcan, Lahmacun, 1 KG Kıyma vb."
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:minLines="2"
+                        android:padding="16dp"
+                        android:textColor="@color/m_primary"
+                        android:textColorHint="@color/m_hint"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="32dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="Kalori Miktarı"
+                        android:textColor="@color/m_primary"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/etKalori"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/rounded_bg_1"
+                        android:fontFamily="@font/lato"
+                        android:gravity="start"
+                        android:hint="Örn: 94 kcal/100 gr"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:minLines="2"
+                        android:padding="16dp"
+                        android:textColor="@color/m_primary"
+                        android:textColorHint="@color/m_hint"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardBesinEkle"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="32dp"
+                    app:cardBackgroundColor="@color/m_primary"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:text="Besini Ekle"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>
